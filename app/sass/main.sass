@@ -1,0 +1,129 @@
+
+/*Default settings*/
+*
+	margin: 0
+	padding: 0
+body
+	font-family: $text-font, sans-serif
+	background-color: #fafcfc
+.wrapper
+	overflow: hidden
+section
+	position: relative
+	padding: 100px 0
+img
+	height: auto
+	max-width: 100%
+	vertical-align: middle
+a 
+	text-decoration: none
+li
+	list-style: none
+
+.clearfix
+	*zoom: 1
+	&:after 
+		content: " "
+		display: table
+		clear: both
+	&:before
+		content: " "
+		display: table	
+
+::selection 
+	background: #D3D3D3 
+	color: #414141
+
+.container
+	margin: 0 auto
+	width: 97%
+	max-width: 1140px
+	position: relative
+
+.accent
+	color: $accent
+
+.section-text
+	font: 16px/24px $text-font
+	color: $text-color
+	margin-bottom: 40px
+	letter-spacing: .25px
+
+.section-title__big
+	display: block
+	font: 30px $extrabold-font
+	color: $main-color
+	margin-bottom: 12px
+	text-align: center
+	text-transform: uppercase
+
+
+.section-title__normal
+	display: block
+	font: 20px $bold-font
+	color: $main-color
+	text-transform: uppercase
+	margin-bottom: 20px	
+
+.main-title
+	display: block
+	font: 72px/55px $heavy-font
+	color: $main-color
+	margin-bottom: 22px
+	text-transform: uppercase
+
+.section-btn, .section-btn2
+	display: inline-block
+	font: 16px $latobold-font
+	text-transform: uppercase
+	padding: 15px 43px
+	border-radius: 30px
+	transition: background .6s, color .6s
+	white-space: nowrap
+
+.section-btn
+	color: $white-color
+	background: $accent
+	margin-right: 20px
+	&:hover
+		background-color: $white-color
+		color: $accent
+
+.section-btn2
+	color: $main-color
+	background: $white-color
+	&:hover
+		color: $white-color
+		background-color: $accent
+	i
+		color: $accent
+		transform: scale(1.2)
+		margin-left: 10px
+		transition: color .6s
+	&:hover i	
+		color: $white-color
+
+
+/*header*/
+
+
+
+/*top-bg*/
+.top-bg
+	position: relative
+	overflow: hidden
+	padding: 0
+	//background: $white-color url(../images/rectangle.png) bottom 30% right no-repeat
+	//background: $white-color url(../images/rectangle.png) center right no-repeat
+	.container
+		min-height: 1000px
+		height: 100vh
+
+.top-bg__info
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 100%
+	max-width: 992px
+	z-index: 2
